@@ -1,4 +1,4 @@
-# Data Science Internship
+# Celebal Excellence Internship
 
 This repository contains all assignments and work submitted during my Celebal Excellence Internship for the Data Engineering domain. Each week covers different concepts and is organized in its own folder.
 
