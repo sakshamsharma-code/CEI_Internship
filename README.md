@@ -18,8 +18,12 @@ CEI_Internship
 │   ├── Assignment_2.sql
 │   ├── Assignment-2_Superstore_SQL_Analysis.pdf
 │   ├── Sample - Superstore.csv
-│   ├── Superstore_SQL_Analysis.sql
-│   └── README.md
+│   └── Superstore_SQL_Analysis.sql
+│
+├── Week 3 Assignment
+│   ├── Week_3_Assignment.pdf
+│   ├── Week_3_Assignment_SQL_Queries.sql
+│   └──Sample - Superstore.csv
 │
 └── README.md
 ```
@@ -136,13 +140,6 @@ Applied SQL filters using:
 * Profit
 * Discount
 
-Examples included:
-
-* Orders from specific regions
-* Technology category sales
-* High-value orders
-* Date-based filtering
-
 #### Aggregation & Grouping
 
 Used aggregate functions:
@@ -152,13 +149,6 @@ Used aggregate functions:
 * `COUNT()`
 * `MIN()`
 * `MAX()`
-
-Generated insights such as:
-
-* Total Sales by Category
-* Total Profit by Category
-* Average Sales by Sub-Category
-* Quantity Sold Analysis
 
 #### Sorting & Ranking
 
@@ -213,7 +203,6 @@ Validated data through:
 * Certain products generated high sales but comparatively lower profits due to discounts.
 * Multi-item orders represented a considerable share of overall transactions.
 * Regional performance varied significantly across different categories.
-* Aggregation and ranking techniques helped identify top-performing customers and products.
 
 ### SQL Concepts Practiced
 
@@ -227,6 +216,114 @@ Validated data through:
 * Date Functions
 * Data Validation Queries
 * Business Analytics Queries
+
+---
+
+# Week 3 — Advanced SQL Analysis using Subqueries, CTEs & Window Functions
+
+**Objective:** Use advanced SQL techniques such as Subqueries, Common Table Expressions (CTEs), and Window Functions to perform customer-centric sales analysis on the Superstore dataset.
+
+**Dataset:** Superstore Sales Dataset (2014–2017)
+
+**RDBMS Used:** MySQL
+
+### What I Did
+
+#### Database Design & Data Preparation
+
+1. Created a staging table `superstore_raw`.
+2. Imported the Superstore CSV dataset using `LOAD DATA INFILE`.
+3. Performed data transformation using `STR_TO_DATE()`.
+4. Normalized the dataset into:
+
+   * `customers`
+   * `products`
+   * `orders`
+5. Removed duplicate records using `SELECT DISTINCT`.
+
+#### Subquery Analysis
+
+Implemented business queries using subqueries:
+
+1. Orders with Sales Above Average Sales.
+2. Highest Sales Order for Each Customer.
+
+#### Common Table Expressions (CTEs)
+
+Created reusable query blocks to:
+
+1. Calculate Total Sales per Customer.
+2. Identify Customers with Above-Average Sales.
+3. Simplify complex analytical queries.
+
+#### Window Function Analysis
+
+Applied advanced analytical functions:
+
+1. `RANK()`
+
+   * Rank customers based on total sales.
+   * Identify Top 3 Customers.
+
+2. `ROW_NUMBER()`
+
+   * Generate sequential order numbers for each customer.
+   * Analyze customer ordering behavior using `PARTITION BY`.
+
+#### Combined Analytics Query
+
+Created a comprehensive query combining:
+
+* JOIN Operations
+* CTEs
+* Window Functions
+* Aggregations
+* Ranking
+
+to generate customer-level performance reports.
+
+#### Mini Project — Customer Sales Insights
+
+Performed customer-focused business analysis:
+
+1. Top 5 Customers by Revenue.
+2. Bottom 5 Customers by Revenue.
+3. Customers with Only One Order.
+4. Customers with Above-Average Sales.
+5. Highest Order Value per Customer.
+
+### Output
+
+| File                                | Description                                                             |
+| ----------------------------------- | ----------------------------------------------------------------------- |
+| `Week_3_Assignment.pdf`             | Complete assignment report with queries, outputs, and business insights |
+| `Week_3_Assignment_SQL_Queries.sql` | SQL script containing all Subquery, CTE, and Window Function queries    |
+| `Sample - Superstore.csv`           | Dataset used for analysis                                               |
+
+### Key Insights
+
+* Top customers generated between **$14K and $25K** in total sales, highlighting revenue concentration among a small customer group.
+* Bottom customers contributed less than **$25** in total sales, indicating low engagement.
+* Only **12 out of 793 customers** placed a single order, representing potential churn risk.
+* Customers with above-average sales contribute a significant share of overall revenue.
+* High-value orders from customers such as Sean Miller and Tamara Chand heavily influence total sales.
+* Repeat purchases contribute more to long-term revenue than isolated large transactions.
+* Customer ranking helps prioritize retention and relationship-management efforts.
+* Window Functions provide powerful tools for customer lifecycle analysis and sales performance tracking.
+
+### SQL Concepts Practiced
+
+* Subqueries
+* Correlated Subqueries
+* Common Table Expressions (CTEs)
+* Window Functions
+* RANK()
+* ROW_NUMBER()
+* PARTITION BY
+* Aggregate Functions
+* Customer Analytics
+* Sales Ranking
+* Business Intelligence Queries
 
 ---
 
@@ -259,7 +356,10 @@ Through this internship, I gained hands-on experience in:
 * Exploratory Data Analysis (EDA)
 * SQL Query Development
 * Relational Database Management
-* Data Validation Techniques
+* Advanced SQL Techniques
+* Subqueries and CTEs
+* Window Function Analytics
+* Customer Segmentation Analysis
 * Business-Oriented Data Analysis
 * Reporting and Documentation
 
