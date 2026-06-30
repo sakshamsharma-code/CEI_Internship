@@ -29,6 +29,15 @@ CEI_Internship
 │   ├── Week4_Azure_ADF_Assignment.docx
 │   └── Sample - Superstore.csv
 │
+├── Week 5 Assignment
+│   ├── data
+│   │   └── dataset.csv
+│   ├── notebook
+│   │   └── spark_basics.ipynb
+│   ├── output
+│   │   └── results.csv
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -281,6 +290,7 @@ Azure Blob Storage (celebalweek4storage)
 * Pandas
 * NumPy
 * Jupyter Notebook
+* Apache Spark (PySpark)
 
 ### Database & Querying
 
@@ -293,6 +303,7 @@ Azure Blob Storage (celebalweek4storage)
 * Azure Data Factory
 * Azure Blob Storage
 * Azure IAM / RBAC
+* Apache Spark
 
 ### Documentation
 
@@ -316,6 +327,108 @@ Through this internship, I have gained hands-on experience in:
 * Building End-to-End Data Pipelines with ADF
 * IAM Role-Based Access Control (RBAC)
 * Pipeline Monitoring and Execution on Azure
+* Apache Spark Fundamentals
+* Spark DataFrame Operations
+* Data Cleaning & Transformation using PySpark
+* Data Aggregation and GroupBy Operations
+* Schema Management and Data Validation
+* Spark ETL Pipeline Development
+
+---
+
+# Week 5 — Apache Spark Fundamentals & Data Processing
+
+**Objective:** Understand Apache Spark fundamentals and perform data cleaning, transformation, filtering, grouping, and aggregation using PySpark DataFrames.
+
+**Dataset:** CSV Dataset
+**Platform:** Apache Spark (PySpark)
+
+### What I Did
+
+#### Spark Fundamentals
+
+1. Understood the limitations of traditional MapReduce and how Spark overcomes them using in-memory processing.
+2. Learned Spark architecture including Driver, Executors, Cluster Manager, and execution flow.
+3. Explored Spark DataFrames, immutability, lazy evaluation, and DAG (Directed Acyclic Graph) execution.
+
+#### Spark Environment Setup
+
+1. Configured a PySpark environment using Google Colab.
+2. Imported the required Spark SQL libraries.
+3. Created a Spark Session for DataFrame operations.
+4. Loaded a CSV dataset into a Spark DataFrame.
+
+#### Data Exploration
+
+1. Inspected the dataset using:
+   * `show()`
+   * `printSchema()`
+   * `columns`
+   * `dtypes`
+2. Verified the schema and examined sample records before processing.
+
+#### Data Cleaning & Transformation
+
+1. Removed duplicate records using `dropDuplicates()`.
+2. Handled missing values using both:
+   * `.na.drop()`
+   * `.na.fill()`
+3. Identified inconsistent or invalid records.
+4. Renamed columns using `withColumnRenamed()`.
+5. Converted column data types using `cast()`.
+
+#### Filtering & Aggregation
+
+1. Applied filtering conditions based on:
+   * Age
+   * Category
+   * Region
+2. Performed aggregations using:
+   * `count()`
+   * `sum()`
+   * `avg()`
+   * `min()`
+   * `max()`
+3. Grouped records using `groupBy()` for category-wise and store-wise analysis.
+4. Applied conditions on aggregated results using DataFrame operations.
+
+#### Spark Processing Concepts
+
+1. Understood the difference between narrow and wide transformations.
+2. Learned how shuffle operations occur during grouping and aggregation.
+3. Explored schema handling and type conversion for reliable data processing.
+
+#### End-to-End Spark Pipeline
+
+Built a complete Spark data processing workflow consisting of:
+
+1. Loading the dataset
+2. Data cleaning
+3. Data transformation
+4. Data filtering
+5. Aggregation and grouping
+6. Output generation
+
+### Output
+
+| File | Description |
+|----------------------------------|-------------------------------------------------------------|
+| `spark_basics.ipynb` | Complete PySpark notebook containing all assignment tasks |
+| `results.csv` | Processed dataset generated after Spark transformations |
+| `README.md` | Assignment documentation and execution guide |
+
+### Key Learnings
+
+* Understood why Apache Spark is preferred over MapReduce for large-scale data processing.
+* Learned to work with immutable Spark DataFrames and lazy evaluation.
+* Performed data cleaning, filtering, schema transformation, and aggregation using PySpark.
+* Gained practical experience with groupBy operations and aggregate functions.
+* Understood shuffle operations and their impact on Spark performance.
+* Built a complete end-to-end data processing pipeline using Spark DataFrames.
+
+### Spark Concepts Practiced
+
+`Apache Spark` · `PySpark` · `Spark Session` · `DataFrames` · `Lazy Evaluation` · `Immutability` · `Schema Handling` · `Data Cleaning` · `Filtering` · `Aggregation` · `groupBy()` · `Shuffle Operations` · `Wide Transformations` · `Data Processing Pipeline`
 
 ---
 
