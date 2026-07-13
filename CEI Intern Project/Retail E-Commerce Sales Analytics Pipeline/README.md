@@ -101,8 +101,8 @@ CEI_Intern_Project/                              (submission root — zip this w
 ├── 02_silver_stage1.ipynb                       # clean, cast, dedup, quarantine
 ├── 03_silver_stage2_scd2.ipynb                  # SCD Type 2 dimensions
 ├── 04_gold.ipynb                                # fact table + analytics tables
-├── README.md
 ├── Final_Project_Report.pdf                     # evaluation write-up
+├── README.md
 ├── datasets/
 │   ├── batch/
 │   │   ├── orders_batch.csv
