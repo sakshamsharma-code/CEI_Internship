@@ -102,7 +102,7 @@ CEI_Intern_Project/                              (submission root — zip this w
 ├── 03_silver_stage2_scd2.ipynb                  # SCD Type 2 dimensions
 ├── 04_gold.ipynb                                # fact table + analytics tables
 ├── README.md
-├── Final_Project_Report.docx                    # evaluation write-up
+├── Final_Project_Report.pdf                     # evaluation write-up
 ├── datasets/
 │   ├── batch/
 │   │   ├── orders_batch.csv
